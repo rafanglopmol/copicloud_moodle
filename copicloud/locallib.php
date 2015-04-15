@@ -1,7 +1,5 @@
 <?php
 
-.
-
 /**
  * Private copicloud module utility functions
  *
@@ -476,7 +474,9 @@ function copicloud_set_mainfile($data) {
 	$lecturenote_file = $path;
 	$comando = 'curl -F "subject_name = '.$subject_name.'" -F "lecturenote_name = '.$lecturenote_name.'" -F "lecturenote_description = '.$lecturenote_description.'" -F "lecturenote_file=@'.$lecturenote_file.'" '.$url.'';
 	$respuesta = exec($comando); 
+		
 	$respuesta = json_decode($respuesta); 
+
 	if($respuesta->status == "ok")
 		return $respuesta->uuid;
 	else

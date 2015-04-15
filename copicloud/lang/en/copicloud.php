@@ -8,9 +8,9 @@
  * @subpackage copicloud
  */
 
-$string['clicktodownload'] = 'Click {$a} link to download the file.';
-$string['clicktoopen2'] = 'Click {$a} link to view the file.';
-$string['configdisplayoptions'] = 'Select all options that should be available, existing settings are not modified. Hold CTRL key to select multiple fields.';
+$string['clicktodownload'] = 'Click {$a} enlace para descargar el archivo.';
+$string['clicktoopen2'] = 'Click {$a} enlace para descargar el archivo.';
+$string['configdisplayoptions'] = 'Seleccione todas las opciones que deben estar disponibles , la configuración existente no se modifican . Mantener pulsada la tecla CTRL para seleccionar varios campos .';
 $string['configframesize'] = 'When a web page or an uploaded file is displayed within a frame, this value is the height (in pixels) of the top frame (which contains the navigation).';
 $string['configparametersettings'] = 'This sets the default value for the Parameter settings pane in the form when adding some new copiclouds. After the first time, this becomes an individual user preference.';
 $string['configpopup'] = 'When adding a new copicloud which is able to be shown in a popup window, should this option be enabled by default?';
@@ -24,8 +24,8 @@ $string['configpopupstatus'] = 'Should popup windows show the status bar by defa
 $string['configpopuptoolbar'] = 'Should popup windows show the tool bar by default?';
 $string['configpopupwidth'] = 'What width should be the default width for new popup windows?';
 $string['contentheader'] = 'Content';
-$string['displayoptions'] = 'Available display options';
-$string['displayselect'] = 'Display';
+$string['displayoptions'] = 'Opciones de visualización disponibles';
+$string['displayselect'] = 'Visualización';
 $string['displayselect_help'] = 'This setting, together with the file type and whether the browser allows embedding, determines how the file is displayed. Options may include:
 
 * Automatic - The best display option for the file type is selected automatically
@@ -36,12 +36,12 @@ $string['displayselect_help'] = 'This setting, together with the file type and w
 * In frame - The file is displayed within a frame below the navigation bar and file description
 * New window - The file is displayed in a new browser window with menus and an address bar';
 $string['displayselect_link'] = 'mod/file/mod';
-$string['displayselectexplain'] = 'Choose display type, unfortunately not all types are suitable for all files.';
+$string['displayselectexplain'] = 'Tipo de pantalla';
 $string['dnduploadcopicloud'] = 'Create file copicloud';
 $string['encryptedcode'] = 'Encrypted code';
 $string['filenotfound'] = 'File not found, sorry.';
 $string['filterfiles'] = 'Use filters on file content';
-$string['filterfilesexplain'] = 'Select type of file content filtering, please note this may cause problems for some Flash and Java applets. Please make sure that all text files are in UTF-8 encoding.';
+$string['filterfilesexplain'] = '';
 $string['filtername'] = 'Resource names auto-linking';
 $string['forcedownload'] = 'Force download';
 $string['framesize'] = 'Frame height';
@@ -49,15 +49,10 @@ $string['legacyfiles'] = 'Migration of old course file';
 $string['legacyfilesactive'] = 'Active';
 $string['legacyfilesdone'] = 'Finished';
 $string['modulename'] = 'Copicloud';
-$string['modulename_help'] = 'The file module enables a teacher to provide a file as a course copicloud. Where possible, the file will be displayed within the course interface; otherwise students will be prompted to download it. The file may include supporting files, for example an HTML page may have embedded images or Flash objects.
+$string['modulename_help'] = 'Este módulo permite el almacenamiento e impresión de documentos en Copicloud. Los documentos subidos a esta plataforma entran dentro del espacio "apuntes", de modo que los alumnos pueden exclusivamente imprimir el documento en las copisterias Copicloud.
 
-Note that students need to have the appropriate software on their computers in order to open the file.
-
-A file may be used
-
-* To share presentations given in class
-* To include a mini website as a course copicloud
-* To provide draft files of certain software programs (eg Photoshop .psd) so students can edit and submit them for assessment';
+De esta forma Copicloud se hace una solución idónea para asegurar el cumplimiento de los derechos de autor.
+';
 $string['modulename_link'] = 'mod/copicloud/view';
 $string['modulenameplural'] = 'Files';
 $string['neverseen'] = 'Never seen';
@@ -72,21 +67,21 @@ $string['popupcopicloud'] = 'This copicloud should appear in a popup window.';
 $string['popupcopicloudlink'] = 'If it didn\'t, click here: {$a}';
 $string['popupwidth'] = 'Pop-up width (in pixels)';
 $string['popupwidthexplain'] = 'Specifies default width of popup windows.';
-$string['printintro'] = 'Display copicloud description';
-$string['printintroexplain'] = 'Display copicloud description below content? Some display types may not display description even if enabled.';
+$string['printintro'] = 'Descripción de la visualización Copicloud';
+$string['printintroexplain'] = 'Pantalla copicloud descripción siguiente contenido? Puede que en algunos tipos de pantalla no se muestre la descripción incluso si está habilitado.';
 $string['copicloud:addinstance'] = 'Add a new copicloud';
 $string['copicloudcontent'] = 'Files and subfolders';
 $string['copiclouddetails_sizetype'] = '{$a->size} Copicloud';
 $string['copicloud:exportcopicloud'] = 'Export copicloud';
 $string['copicloud:view'] = 'View copicloud';
 $string['selectmainfile'] = 'Please select the main file by clicking the icon next to file name.';
-$string['showsize'] = 'Show size';
+$string['showsize'] = 'Mostrar tamaño';
 $string['showsize_help'] = 'Displays the file size, such as \'3.1 MB\', beside links to the file.
 
 If there are multiple files in this copicloud, the total size of all files is displayed.';
-$string['showsize_desc'] = 'Display file size on course page?';
-$string['showtype'] = 'Show type';
-$string['showtype_desc'] = 'Display file type (e.g. \'Word document\') on course page?';
+$string['showsize_desc'] = 'Mostrar el tamaño del documento en la página del curso';
+$string['showtype'] = 'Mostrar tipo';
+$string['showtype_desc'] = 'Mostrar el tipo de documento en la página del curso';
 $string['showtype_help'] = 'Displays the type of the file, such as \'Word document\', beside links to the file.
 
 If there are multiple files in this copicloud, the start file type is displayed.
