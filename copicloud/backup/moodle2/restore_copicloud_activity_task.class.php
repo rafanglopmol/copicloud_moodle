@@ -51,8 +51,8 @@ class restore_copicloud_activity_task extends restore_activity_task {
     static public function define_decode_rules() {
         $rules = array();
 
-        $rules[] = new restore_decode_rule('copicloudVIEWBYID', '/mod/copicloud/view.php?id=$1', 'course_module');
-        $rules[] = new restore_decode_rule('copicloudINDEX', '/mod/copicloud/index.php?id=$1', 'course');
+        $rules[] = new restore_decode_rule('COPICLOUDVIEWBYID', '/mod/copicloud/view.php?id=$1', 'course_module');
+        $rules[] = new restore_decode_rule('COPICLOUDINDEX', '/mod/copicloud/index.php?id=$1', 'course');
 
         return $rules;
 

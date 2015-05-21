@@ -48,7 +48,7 @@ class backup_copicloud_activity_task extends backup_activity_task {
 
         // Link to the list of copiclouds.
         $search="/(".$base."\/mod\/copicloud\/index.php\?id\=)([0-9]+)/";
-        $content= preg_replace($search, '$@RESOURCEINDEX*$2@$', $content);
+        $content= preg_replace($search, '$@COPICLOUDINDEX*$2@$', $content);
 
         // Link to copicloud view by moduleid.
         $search = "/(".$base."\/mod\/copicloud\/view.php\?id\=)([0-9]+)/";
@@ -78,7 +78,7 @@ class backup_copicloud_activity_task extends backup_activity_task {
                         $replace = '$@' . strtoupper($oldrecs[$cmid]->newmodule) . 'VIEWBYID*' . $cmid . '@$';
                     } else {
                         // Not in the copicloud old table, don't rewrite
-                        $replace = '$@RESOURCEVIEWBYID*'.$cmid.'@$';
+                        $replace = '$@COPICLOUDVIEWBYID*'.$cmid.'@$';
                     }
                     $content = str_replace($matches[0][$i], $replace, $content);
                 }
@@ -104,7 +104,7 @@ class backup_copicloud_activity_task extends backup_activity_task {
                 }
             }
         } else {
-            $content = preg_replace($search, '$@RESOURCEVIEWBYID*$2@$', $content);
+            $content = preg_replace($search, '$@COPICLOUDVIEWBYID*$2@$', $content);
         }
         return $content;
     }
